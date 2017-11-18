@@ -1,0 +1,33 @@
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" $
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+<div class="Division">
+<h4> Control Panel </h4>
+<form action="/forward/" method="post">
+    <button name="forwardBtn" type="submit">Forward</button>
+</form>
+
+<form action="/back/" method="post">
+    <button name="backBtn" type="submit">Back</button>
+</form>
+
+
+<form action="/left/" method="post">
+    <button name="leftBtn" type="submit">left</button>
+</form>
+
+<form action="/right/" method="post">
+    <button name="rightBtn" type="submit">right</button>
+</form>
+</div>
+<div class="Division">
+<img src="{{ url_for('video_feed') }}">
+</div>
+
+<!--<p> test {{ forward_message }} {{second}}</p>-->
+</body>
